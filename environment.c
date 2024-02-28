@@ -23,7 +23,7 @@ int _env(info_t *argstr)
 
 char *_getenv(info_t *argstr, const char *name)
 {
-	list_t *node =argstr->env;
+	list_t *node = argstr->env;
 	char *s;
 
 	while (node)
