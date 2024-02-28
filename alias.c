@@ -94,7 +94,7 @@ int print_alias(list_t *node)
 /**
  * _alias - A function that acts as the alias builtin
  * @info: The parameter struct
- * 
+ *
  * Return: Always 0
  */
 int _alias(info_t *parstr)
