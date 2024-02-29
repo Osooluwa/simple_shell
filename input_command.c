@@ -65,7 +65,7 @@ ssize_t _getinput(info_t *strprm)
 		q = p;
 		s = bff + p;
 
-		chain_checker(strprm, bff, &q, p, len);
+		chn_check(strprm, bff, &q, p, len);
 		for (q = p; q < len; q++)
 		{
 			if (chain_delim(strprm, bff, &q))
