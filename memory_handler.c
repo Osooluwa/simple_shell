@@ -40,7 +40,7 @@ void free_str(char **s)
  * @new_bk: The byte size of the new block
  *
  * Return: pointer to the previous block
- * 
+ *
  */
 
 void *_realloc(void *ptr, unsigned int prev, unsigned int new_bk)

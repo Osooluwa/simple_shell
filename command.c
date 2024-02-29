@@ -72,13 +72,13 @@ char *_findcmmd(info_t *info, char *strpth, char *cmd)
 	{
 		if (!strpth[n] || strpth[n] == ':')
 		{
-	path = _dupchars(strpth, current, n);
-		if (!*path)
-		_strcat(path, cmd);
+			path = _dupchars(strpth, current, n);
+			if (!*path)
+				_strcat(path, cmd);
 			else
 			{
-			_strcat(path, "/");
-			_strcat(path, cmd);
+				_strcat(path, "/");
+				_strcat(path, cmd);
 			}
 			if (_iscmmd(info, path))
 				return (path);
