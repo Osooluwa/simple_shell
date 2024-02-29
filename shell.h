@@ -71,7 +71,7 @@ typedef struct liststr
  * @cmd_buf_type: CMD_type ||, &&, ;
  * @readfd: the fd from which to read line input
  * @histcount: the history line number count
- * @n: num
+ *
  */
 typedef struct passinfo
 {
@@ -142,7 +142,7 @@ char *_memset(char *m, char b, unsigned int f);
 void *_realloc(void *ptr, unsigned int prev, unsigned int new_bk);
 void free_str(char **s);
 int free_ptr(void **);
-int int_mode(info_t *stradd);
+int interactive_mode(info_t *stradd);
 int _delim(char c, char *delim);
 int _isalpha(int);
 int _atoi(char *);

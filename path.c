@@ -37,7 +37,7 @@ void path_cmmd(info_t *strprm)
 		_forkfunction(strprm);	}
 	else
 	{
-	if ((int_mode(strprm) || _getenv(strprm, "PATH=")
+	if ((interactive_mode(strprm) || _getenv(strprm, "PATH=")
 				 || strprm->argv[0][0] == '/') && _iscmmd(strprm, strprm->argv[0]))
 		_forkfunction(strprm);
 		else if (*(strprm->arg) != '\n')
