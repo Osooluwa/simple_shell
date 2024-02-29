@@ -179,7 +179,7 @@ size_t print_list_t(const list_t *);
 list_t *node_beginswith(list_t *, char *, char);
 ssize_t index_node(list_t *, list_t *);
 int chain_delim(info_t *, char *, size_t *);
-void chain_checker(info_t *, char *, size_t *, size_t, size_t);
+void chn_check(info_t *, char *, size_t *, size_t, size_t);
 int alias_rep(info_t *);
 int vrb_rep(info_t *);
 int str_rep(char **, char *);

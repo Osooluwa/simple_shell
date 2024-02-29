@@ -38,7 +38,7 @@ int chain_delim(info_t *strprm, char *bff, size_t *pos)
 }
 
 /**
- * chain_checker - A function that checks to allow
+ * chn_check - A function that checks to allow
  * continuous chaining based on last status
  * @strprm: The parameter struct
  * @bff: The character buffer
@@ -49,7 +49,7 @@ int chain_delim(info_t *strprm, char *bff, size_t *pos)
  * Return: Void
  */
 
-void chain_checker(info_t *strprm, char *bff, size_t *pos, size_t n, size_t length)
+void chn_check(info_t *strprm, char *bff, size_t *pos, size_t n, size_t length)
 {
 	size_t q = *pos;
 
