@@ -35,13 +35,13 @@ char **strtow(char *str, char *d)
 		q = 0;
 		while (!_delim(str[n + q], d) && str[n + q])
 			q++;
-		s[p] = malloc((p + 1) * sizeof(char));
+		s[p] = malloc((q + 1) * sizeof(char));
 		if (!s[p])
 		{
 			for (q = 0; q < p; q++)
 				free(s[q]);
 			free(s);
-			return (NULL);
+
 		}
 		for (c = 0; c < q; c++)
 			s[p][c] = str[n++];
