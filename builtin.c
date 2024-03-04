@@ -40,7 +40,7 @@ int do_cd(info_t *argstr)
 		ch_dir = chdir(argstr->argv[1]);
 	if (ch_dir == -1)
 	{
-		error_printer(argstr, "cannot cd to ");
+		error_printer(argstr, "can't cd to ");
 		_eputs(argstr->argv[1]), _eputchar('\n');
 	}
 	else
