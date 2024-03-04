@@ -48,7 +48,7 @@ int _setenviron(info_t *argstr)
 {
 	if (argstr->argc != 3)
 	{
-		printf("Wrong number of arguments\n");
+		/* printf("Wrong number of arguments\n"); */
 		return (1);
 	}
 	if (_setenv(argstr, argstr->argv[1], argstr->argv[2]))
