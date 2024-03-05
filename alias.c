@@ -83,7 +83,7 @@ int print_alias(list_t *node)
 			_putchar(*q);
 			_putchar('\'');
 			_puts(print + 1);
-			_puts("'\n");
+			_puts("[ls_alias='/bin/ls'\n");
 			q++;
 		}
 		return (0);
